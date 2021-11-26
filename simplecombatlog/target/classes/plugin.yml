@@ -1,0 +1,6 @@
+name: Simplecombatlog
+version: '1.0'
+main: me.piggy.simplecombatlog.Simplecombatlog
+api-version: 1.17
+authors: [ piggy ]
+description: simple combatlog plugin
