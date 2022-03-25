@@ -20,7 +20,7 @@ public class CombatLog {
 
     public void startCombatLog() {
         Simplecombatlog.getInstance().combatloggedplayers.put(p.getUniqueId(), this);
-        p.sendMessage(ChatColor.BLUE + "[SimpleCombatLog] " + ChatColor.RED + "You Have Been Damaged DO NOT LOG OUT!");
+        p.sendMessage(ChatColor.BLUE + "[AntiGallinas] " + ChatColor.RED + "Te han golpeado, no te desconectes!");
         stopTimer();
         startCountdown();
     }
@@ -33,7 +33,7 @@ public class CombatLog {
         taskID = scheduler.scheduleSyncRepeatingTask(Simplecombatlog.getInstance(), () -> {
             if (time == 0) {
                 Simplecombatlog.getInstance().combatloggedplayers.remove(p.getUniqueId());
-                p.sendMessage(ChatColor.BLUE + "[SimpleCombatLog] " + ChatColor.GREEN + "You Are Now Safe You May Log Out.");
+                p.sendMessage(ChatColor.BLUE + "[AntiGallinas] " + ChatColor.GREEN + "Estás seguro, puedes desconectarte.");
                 stopTimer();
             }
             time = time - 1;
