@@ -34,7 +34,7 @@ public class CombatLogEvents implements Listener {
         Player p = e.getPlayer();
         if (Simplecombatlog.getInstance().combatloggedplayers.containsKey(p.getUniqueId())) {
             if (Simplecombatlog.getInstance().commands.contains(e.getMessage())) {
-                p.sendMessage(ChatColor.BLUE  + "[SimpleCombatLog] " + ChatColor.RED + "You Can't Preform This Command Right Now.");
+                p.sendMessage(ChatColor.BLUE  + "[AntiGallinas] " + ChatColor.RED + "No puedes hacer eso ahora mismo.");
                 e.setCancelled(true);
             }
         }
