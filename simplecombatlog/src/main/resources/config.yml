@@ -1,8 +1,13 @@
 #how many seconds combat log lasts
 #put time in seconds!
-time : 15
+time : 10
 
 #commands the player can't do while combat logged
 commands :
   - '/hub'
   - '/lobby'
+  - '/spawn'
+  - '/home'
+  - '/warp'
+  - '/tpa'
+  - '/back'
